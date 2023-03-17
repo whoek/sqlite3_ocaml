@@ -5,7 +5,7 @@ open Sqlite3
 (* let mydb = db_open "test.db" *)
 
 let create_table_sql = "
-                        CREATE TABLE contacts (
+                        CREATE TABLE IF NOT EXISTS contacts (
 	                contact_id INTEGER PRIMARY KEY,
 	                first_name TEXT NOT NULL,
 	                last_name TEXT NOT NULL,
