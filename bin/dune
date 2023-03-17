@@ -1,4 +1,5 @@
 (executable
  (public_name sqlite3_ocaml)
  (name main)
- (libraries sqlite3 sqlite3_ocaml))
+ (libraries sqlite3)
+)
