@@ -1,8 +1,4 @@
-(** Build with ocamlbuild -pkg sqlite3 sample_2.native or use make sample_2 *)
-
 open Sqlite3
-
-(* let mydb = db_open "test.db" *)
 
 let create_table_sql = "
                         CREATE TABLE contacts (
@@ -13,8 +9,6 @@ let create_table_sql = "
 	                phone TEXT NOT NULL UNIQUE
                         );
 "
-
-
 let db = db_open "test.db"
 
 let () =
