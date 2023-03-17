@@ -8,8 +8,7 @@ dune build
 dune exec ./bin/main.exe
 
 ```
-`test.d` will be created
-
+This will create a database file `test.db`
 
 ```
 $ ldd main.exe 
